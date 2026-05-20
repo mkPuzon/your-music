@@ -1,0 +1,128 @@
+/* ── Reset rounded corners globally ── */
+*, *::before, *::after {
+    border-radius: 0 !important;
+}
+
+/* ── App background + outer frame ── */
+[data-testid="stApp"] {
+    background-color: #000000;
+    border: 8px solid #ffffff;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+/* ── Sidebar ── */
+[data-testid="stSidebar"] {
+    background-color: #000000;
+    border-right: 8px solid #ffffff;
+}
+
+/* ── Main content area padding ── */
+[data-testid="stMainBlockContainer"] {
+    padding-top: 2rem;
+}
+
+@font-face {
+    font-family: 'notosans';
+    src: url("assets/notosans.ttf");
+}
+@font-face {
+    font-family: 'anticdidone';
+    src: url("assets/anticdidone.ttf");
+}
+
+h1, h2, h3, h4,
+[data-testid="stHeading"] {
+    font-family: 'anticdidone' !important;
+}
+p {
+    font-family: 'notosans';
+}
+
+/* ── Hero section ── */
+.hero {
+    padding: 3rem 2rem;
+    background: #000000;
+    border: 1px solid #1a1a1a;
+    border-left: 4px solid #22c55e;
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    letter-spacing: -0.02em;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #888888;
+}
+
+/* ── Cards ── */
+.card {
+    padding: 1.5rem;
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    height: 100%;
+}
+
+/* ── Metric blocks ── */
+.metric {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+}
+
+/* ── Streamlit metric component ── */
+[data-testid="stMetric"] {
+    background-color: #0d0d0d;
+    border: 1px solid #1a1a1a;
+    padding: 1rem 1.25rem;
+}
+
+[data-testid="stMetricValue"] {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #888888;
+}
+
+/* ── Dividers ── */
+hr {
+    border-color: #1a1a1a !important;
+    margin: 1rem 0;
+}
+
+/* ── Selectbox / inputs ── */
+[data-testid="stSelectbox"] > div > div {
+    background-color: #0d0d0d;
+    border-color: #1a1a1a;
+}
+
+/* ── Dataframe ── */
+[data-testid="stDataFrame"] {
+    border: 1px solid #1a1a1a;
+}
+
+/* ── Expander ── */
+[data-testid="stExpander"] {
+    border: 1px solid #1a1a1a;
+    background-color: #0d0d0d;
+}
+
+/* ── Info / warning boxes ── */
+[data-testid="stAlert"] {
+    border-left: 4px solid #22c55e;
+    background-color: #0d0d0d;
+}
+
+/* ── Accent text helpers ── */
+.accent-green { color: #22c55e; }
+.accent-yellow { color: #facc15; }
+.text-muted { color: #888888; }
